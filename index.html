@@ -3,12 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Thiệp Kỷ Niệm 6 Năm</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
       }
 
       body {
@@ -44,7 +65,7 @@
 
       .card-header {
         background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        padding: 40px 30px;
+        padding: 20px 20px;
         text-align: center;
         color: white;
       }
@@ -84,7 +105,7 @@
 
       .message {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: justify;
       }
 
@@ -114,44 +135,115 @@
         color: #666;
         font-size: 14px;
       }
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .img-container {
+        position: absolute;
+        top: 50%;
+        right: -350px;
+        transform: translateY(-50%) rotate(15deg);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border: 5px solid white;
+        z-index: 10;
+      }
+
+      .image1 {
+        width: 250px;
+        height: auto;
+      }
+
+      .heart-shape {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 40px;
+        z-index: 20;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .img-container2 {
+        position: absolute;
+        top: 50%;
+        left: -350px;
+        transform: translateY(-50%) rotate(-15deg);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border: 5px solid white;
+        z-index: 10;
+      }
+
+      .image2 {
+        width: 250px;
+        height: auto;
+      }
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="card-header">
-        <div class="hearts">💕</div>
-        <h1>Kỷ Niệm 6 Năm Bên Nhau</h1>
-        <p>2019 - 2025</p>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="hearts">💕</div>
+          <h1 class="montserrat">6 Năm Bên Nhau</h1>
+          <p>29 - 09</p>
+          <p>(2019 - 2025)</p>
+        </div>
+
+        <div class="card-body">
+          <p class="message">Gửi em yêu Mee của anh</p>
+
+          <div class="decorative-line"></div>
+          <p class="message">
+            <span class="highlight">6 năm</span> - con số tưởng chừng như ngắn
+            ngủi nhưng lại chứa đựng biết bao kỷ niệm đẹp đẽ mà chúng ta đã cùng
+            nhau tạo nên, mặc dù chúng ta dạo này có nhiều biến cố do sự thiếu
+            chín chắn của anh :(( Tuy vậy, vào ngày này anh luôn muốn dành cho
+            em những điều tốt đẹp nhất cho người mà anh luôn trân quý
+          </p>
+
+          <p class="message">
+            Cảm ơn em vì đã luôn ở bên, vì đã cùng anh lớn lên, trưởng thành và
+            học cách yêu thương nhau mỗi ngày. Mỗi kỷ niệm với em đều là một món
+            quà quý giá mà anh trân trọng.
+          </p>
+
+          <p class="message">
+            Mong chúng ta sẽ còn nhiều cột mốc đẹp hơn nữa.
+            <span class="highlight">Yêu em nhiều lắm!</span>
+          </p>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-items: end;
+              align-items: center;
+            "
+          >
+            <div class="signature">- Người yêu em -</div>
+            <p class="">Anh Meo</p>
+          </div>
+        </div>
+
+        <div class="footer montserrat">
+          ✨ Chúc mừng kỷ niệm 6 năm yêu nhau! ✨
+        </div>
       </div>
-
-      <div class="card-body">
-        <p class="message">Gửi người yêu của anh/em,</p>
-
-        <div class="decorative-line"></div>
-
-        <p class="message">
-          <span class="highlight">6 năm</span> - con số tưởng chừng như ngắn
-          ngủi nhưng lại chứa đựng biết bao kỷ niệm đẹp đẽ mà chúng ta đã cùng
-          nhau tạo nên. Từ những ngày đầu ngại ngùng, đến những khoảnh khắc ngọt
-          ngào, rồi cả những lúc vượt qua sóng gió bên nhau...
-        </p>
-
-        <p class="message">
-          Cảm ơn em/anh vì đã luôn ở bên, vì đã cùng anh/em lớn lên, trưởng
-          thành và học cách yêu thương nhau mỗi ngày. Mỗi kỷ niệm với em/anh đều
-          là một món quà quý giá mà anh/em trân trọng.
-        </p>
-
-        <p class="message">
-          Hẹn chúng ta sẽ còn nhiều cột mốc đẹp hơn nữa, cùng nhau viết tiếp câu
-          chuyện tình yêu của riêng đôi ta.
-          <span class="highlight">Yêu em/anh nhiều lắm!</span>
-        </p>
-
-        <div class="signature">- Người luôn yêu em/anh -</div>
+      <div class="img-container">
+        <img src="asset/image1.JPG" alt="Anniversary photo" class="image1" />
+        <div class="heart-shape">❤️</div>
+        <p style="text-align: center">Eiuuuuuuuu</p>
       </div>
+      <div class="img-container2">
+        <img src="asset/image2.JPG" alt="Anniversary photo" class="image2" />
 
-      <div class="footer">✨ Chúc mừng kỷ niệm 6 năm yêu nhau! ✨</div>
+        <p style="text-align: center">Us</p>
+      </div>
     </div>
   </body>
 </html>
