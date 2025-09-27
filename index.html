@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiệp Kỷ Niệm 6 Năm</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Georgia", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+      }
+
+      .card {
+        background: white;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        animation: fadeIn 1s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card-header {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        padding: 40px 30px;
+        text-align: center;
+        color: white;
+      }
+
+      .hearts {
+        font-size: 40px;
+        margin-bottom: 15px;
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.1);
+        }
+      }
+
+      .card-header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-header p {
+        font-size: 18px;
+        opacity: 0.95;
+      }
+
+      .card-body {
+        padding: 40px 30px;
+        line-height: 1.8;
+        color: #333;
+      }
+
+      .message {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .highlight {
+        color: #f5576c;
+        font-weight: bold;
+      }
+
+      .signature {
+        text-align: right;
+        font-style: italic;
+        margin-top: 30px;
+        color: #667eea;
+      }
+
+      .decorative-line {
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(to right, #f093fb, #f5576c);
+        margin: 20px auto;
+      }
+
+      .footer {
+        background: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="hearts">💕</div>
+        <h1>Kỷ Niệm 6 Năm Bên Nhau</h1>
+        <p>2019 - 2025</p>
+      </div>
+
+      <div class="card-body">
+        <p class="message">Gửi người yêu của anh/em,</p>
+
+        <div class="decorative-line"></div>
+
+        <p class="message">
+          <span class="highlight">6 năm</span> - con số tưởng chừng như ngắn
+          ngủi nhưng lại chứa đựng biết bao kỷ niệm đẹp đẽ mà chúng ta đã cùng
+          nhau tạo nên. Từ những ngày đầu ngại ngùng, đến những khoảnh khắc ngọt
+          ngào, rồi cả những lúc vượt qua sóng gió bên nhau...
+        </p>
+
+        <p class="message">
+          Cảm ơn em/anh vì đã luôn ở bên, vì đã cùng anh/em lớn lên, trưởng
+          thành và học cách yêu thương nhau mỗi ngày. Mỗi kỷ niệm với em/anh đều
+          là một món quà quý giá mà anh/em trân trọng.
+        </p>
+
+        <p class="message">
+          Hẹn chúng ta sẽ còn nhiều cột mốc đẹp hơn nữa, cùng nhau viết tiếp câu
+          chuyện tình yêu của riêng đôi ta.
+          <span class="highlight">Yêu em/anh nhiều lắm!</span>
+        </p>
+
+        <div class="signature">- Người luôn yêu em/anh -</div>
+      </div>
+
+      <div class="footer">✨ Chúc mừng kỷ niệm 6 năm yêu nhau! ✨</div>
+    </div>
+  </body>
+</html>
